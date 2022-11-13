@@ -12,9 +12,6 @@
             "args": [],
             "icon": "terminal-cmd"
         },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
         "Ubuntu (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
@@ -24,9 +21,8 @@
         }
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.linux":"zsh",
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Atom One Dark",
-    "terminal.integrated.fontFamily": "monospace",
     "vim.useSystemClipboard": true,
 }
