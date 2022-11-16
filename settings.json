@@ -19,23 +19,34 @@
   },
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.defaultProfile.linux": "zsh",
+
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Atom One Dark",
+
+  "editor.tabSize": 2,
+  "editor.cursorSurroundingLines": 7,
+  "editor.lineNumbers": "relative",
+  "editor.suggest.showWords": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.formatting.provider": "black",
+
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
 
   "leetcode.workspaceFolder": "/home/nick/.leetcode",
   "leetcode.defaultLanguage": "python3",
   "leetcode.hideSolved": true,
   "leetcode.useWsl": true,
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[python]": {
-    "editor.defaultFormatter": null
-  },
-  "python.formatting.provider": "black",
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.commentDescription": false,
-  "leetcode.hint.commandShortcut": false
+  "leetcode.hint.commandShortcut": false,
+
+  "window.zoomLevel": -1,
 }
