@@ -22,7 +22,20 @@
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.defaultProfile.linux":"zsh",
+    
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Atom One Dark",
+    
     "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.easymotion": true,
+    
+    "editor.tabSize": 2,
+    "editor.cursorSurroundingLines": 7,
+    "editor.lineNumbers": "relative",
+    "editor.formatOnSave": true,
+    "editor.suggest.showWords": false,
+    
+    "window.zoomLevel": -1,
 }
