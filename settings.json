@@ -17,36 +17,67 @@
       "args": ["-d", "Ubuntu"]
     }
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "zsh",
 
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Atom One Dark",
 
   "editor.tabSize": 2,
   "editor.cursorSurroundingLines": 7,
   "editor.lineNumbers": "relative",
   "editor.suggest.showWords": false,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": null
-  },
-  "python.formatting.provider": "black",
+  "editor.formatOnSaveMode": "file", // required to format on save
+  // "files.autoSave": "onFocusChange", // optional but recommended
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+  "eslint.validate": ["javascript", "typescript"],
 
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.easymotion": true,
-
-  "leetcode.workspaceFolder": "/home/nick/.leetcode",
-  "leetcode.defaultLanguage": "python3",
-  "leetcode.hideSolved": true,
-  "leetcode.useWsl": true,
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.commentDescription": false,
-  "leetcode.hint.commandShortcut": false,
+  "vim.handleKeys": {
+    "<C-s>": false,
+    "<C-n>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    }
+  ],
 
   "window.zoomLevel": -1,
+  "git.autofetch": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "css.lint.unknownAtRules": "ignore",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.eol": "\n",
+  "git.enableSmartCommit": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
