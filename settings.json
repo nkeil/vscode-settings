@@ -1,40 +1,22 @@
 {
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Ubuntu (WSL)": {
-      "path": "C:\\WINDOWS\\System32\\wsl.exe",
-      "args": ["-d", "Ubuntu"]
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-
-  "workbench.iconTheme": "vscode-icons",
-
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.cursorSurroundingLines": 7,
   "editor.lineNumbers": "relative",
-  "editor.suggest.showWords": false,
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file", // required to format on save
-  // "files.autoSave": "onFocusChange", // optional but recommended
-  "editor.formatOnPaste": false, // required
-  "editor.formatOnType": false, // required
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll.eslint": true
-  // },
-  "eslint.validate": ["javascript", "typescript"],
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "formattingToggle.affects": ["editor.formatOnSave"],
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 12,
 
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
@@ -65,19 +47,4 @@
       ]
     }
   ],
-
-  "window.zoomLevel": -1,
-  "git.autofetch": true,
-  "workbench.colorTheme": "Atom One Dark",
-  "css.lint.unknownAtRules": "ignore",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "files.eol": "\n",
-  "git.enableSmartCommit": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": null
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  }
 }
